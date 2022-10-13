@@ -1,0 +1,493 @@
+bodies {
+  name: "floor"
+  colliders {
+    plane {
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 1.0
+  frozen {
+    all: true
+  }
+}
+
+bodies {
+  name: "arm_iiwa_link_0"
+  colliders {
+    position {
+      z: 0.078875
+    }
+    rotation {
+      x: -0.0
+      z: -0.0
+    }
+    capsule {
+      radius: 0.078875
+      length: 0.15775
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 5.0
+  frozen {
+    all: true
+  }
+}
+bodies {
+  name: "arm_iiwa_link_1"
+  colliders {
+    position {
+      y: -0.0205
+      z: 0.1364
+    }
+    rotation {
+      x: 20.0
+    }
+    capsule {
+      radius: 0.08
+      length: 0.28
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 4.0
+}
+bodies {
+  name: "arm_iiwa_link_2"
+  colliders {
+    position {
+      y: 0.1016
+      z: 0.0393
+    }
+    rotation {
+      x: 70.0
+    }
+    capsule {
+      radius: 0.06
+      length: 0.35
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 4.0
+}
+bodies {
+  name: "arm_iiwa_link_3"
+  colliders {
+    position {
+      y: 0.0308
+      z: 0.1037
+    }
+    rotation {
+      x: -15.0
+    }
+    capsule {
+      radius: 0.06
+      length: 0.3
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 3.0
+}
+bodies {
+  name: "arm_iiwa_link_4"
+  colliders {
+    position {
+      y: 0.0816
+      z: 0.0293
+    }
+    rotation {
+      x: 75.0
+    }
+    capsule {
+      radius: 0.06
+      length: 0.32
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 2.7
+}
+bodies {
+  name: "arm_iiwa_link_5"
+  colliders {
+    position {
+      y: 0.0293
+      z: 0.1137
+    }
+    rotation {
+      x: -15.0
+    }
+    capsule {
+      radius: 0.06
+      length: 0.32
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 1.7
+}
+bodies {
+  name: "arm_iiwa_link_6"
+  colliders {
+    position {
+      y: 0.02
+      z: 0.0
+    }
+    rotation {
+      x: 90.0
+    }
+    capsule {
+      radius: 0.06
+      length: 0.2
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 1.8
+}
+bodies {
+  name: "arm_iiwa_link_7"
+  colliders {
+    position {
+      y: 0.0
+      z: 0.13
+    }
+    rotation {
+      x: 0.0
+    }
+    capsule {
+      radius: 0.035
+      length: 0.26
+    }
+  }
+  colliders {
+    position {
+      x: 0.005
+      y: 0.027
+      z: 0.2785
+    }
+    rotation {
+      x: -0.0
+      z: -0.0
+    }
+    capsule {
+      radius: 0.005
+      length: 0.046
+    }
+  }
+  colliders {
+    position {
+      x: -0.005
+      y: 0.027
+      z: 0.2785
+    }
+    rotation {
+      x: -0.0
+      z: -0.0
+    }
+    capsule {
+      radius: 0.005
+      length: 0.046
+    }
+  }
+
+  colliders {
+    position {
+      x: 0.005
+      y: -0.027
+      z: 0.2785
+    }
+    rotation {
+      x: -0.0
+      z: -0.0
+    }
+    capsule {
+      radius: 0.005
+      length: 0.046
+    }
+  }
+  colliders {
+    position {
+      x: -0.005
+      y: -0.027
+      z: 0.2785
+    }
+    rotation {
+      x: -0.0
+      z: -0.0
+    }
+    capsule {
+      radius: 0.005
+      length: 0.046
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 2.70657
+}
+
+joints {
+  name: "iiwa_joint_1"
+  stiffness: 40000.0
+  parent: "arm_iiwa_link_0"
+  child: "arm_iiwa_link_1"
+  parent_offset {
+    z: 0.1575
+  }
+  rotation {
+    x: -0.0
+    y: -90.0
+  }
+  angular_damping: 10.0
+  angle_limit {
+    min: -170
+    max: 170
+  }
+  limit_strength: 320.0
+  spring_damping: 50.0
+  reference_rotation {
+    x: -0.0
+    z: -0.0
+  }
+}
+joints {
+  name: "iiwa_joint_2"
+  stiffness: 40000.0
+  parent: "arm_iiwa_link_1"
+  child: "arm_iiwa_link_2"
+  parent_offset {
+    z: 0.2025
+  }
+  rotation {
+    x: -0.0
+    y: -90.0
+  }
+  angular_damping: 10.0
+  angle_limit {
+    min: -120
+    max: 120
+  }
+  limit_strength: 300.0
+  spring_damping: 50.0
+  reference_rotation {
+    x: -90
+    y: 0.0
+    z: -180.0
+  }
+}
+joints {
+  name: "iiwa_joint_3"
+  stiffness: 40000.0
+  parent: "arm_iiwa_link_2"
+  child: "arm_iiwa_link_3"
+  parent_offset {
+    x: 9.1169076e-29
+    y: 0.2045
+    z: -7.5117043e-07
+  }
+  rotation {
+    x: -0.0
+    y: -90.0
+  }
+  angular_damping: 10.0
+  angle_limit {
+    min: -170
+    max: 170
+  }
+  limit_strength: 300.0
+  spring_damping: 50.0
+  reference_rotation {
+    x: -90.00021
+    y: -1.0721693e-14
+    z: -179.99985
+  }
+}
+joints {
+  name: "iiwa_joint_4"
+  stiffness: 40000.0
+  parent: "arm_iiwa_link_3"
+  child: "arm_iiwa_link_4"
+  parent_offset {
+    z: 0.2155
+  }
+  rotation {
+    x: -0.0
+    y: -90.0
+  }
+  angular_damping: 10.0
+  angle_limit {
+    min: -120.0
+    max: 120.0
+  }
+  limit_strength: 300.0
+  spring_damping: 50.0
+  reference_rotation {
+    x: 90.00021
+    z: -0.0
+  }
+}
+joints {
+  name: "iiwa_joint_5"
+  stiffness: 40000.0
+  parent: "arm_iiwa_link_4"
+  child: "arm_iiwa_link_5"
+  parent_offset {
+    y: 0.1845
+    z: -6.7770634e-07
+  }
+  rotation {
+    x: -0.0
+    y: -90.0
+  }
+  angular_damping: 10.0
+  angle_limit {
+    min: -170
+    max: 170
+  }
+  limit_strength: 300.0
+  spring_damping: 50.0
+  reference_rotation {
+    x: -90.00021
+    y: 1.0721693e-14
+    z: 179.99985
+  }
+}
+joints {
+  name: "iiwa_joint_6"
+  stiffness: 40000.0
+  parent: "arm_iiwa_link_5"
+  child: "arm_iiwa_link_6"
+  parent_offset {
+    z: 0.2155
+  }
+  rotation {
+    x: -0.0
+    y: -90.0
+  }
+  angular_damping: 10.0
+  angle_limit {
+    min: -120
+    max: 120
+  }
+  limit_strength: 300.0
+  spring_damping: 50.0
+  reference_rotation {
+    x: 90.00021
+    y: -1.00642475e-20
+    z: 3.6968047e-26
+  }
+}
+joints {
+  name: "iiwa_joint_7"
+  stiffness: 40000.0
+  parent: "arm_iiwa_link_6"
+  child: "arm_iiwa_link_7"
+  parent_offset {
+    y: 0.081
+  }
+  rotation {
+    x: -0.0
+    y: -90.0
+  }
+  angular_damping: 10.0
+  angle_limit {
+    min: -180
+    max: 180
+  }
+  limit_strength: 300.0
+  spring_damping: 50.0
+  reference_rotation {
+    x: -90.00021
+    y: -1.0721693e-14
+    z: -179.99985
+  }
+}
+
+actuators {
+  name: "iiwa_joint_1"
+  joint: "iiwa_joint_1"
+  strength: 100.0
+  torque {
+  }
+}
+actuators {
+  name: "iiwa_joint_2"
+  joint: "iiwa_joint_2"
+  strength: 100.0
+  torque {
+  }
+}
+actuators {
+  name: "iiwa_joint_3"
+  joint: "iiwa_joint_3"
+  strength: 100.0
+  torque {
+  }
+}
+actuators {
+  name: "iiwa_joint_4"
+  joint: "iiwa_joint_4"
+  strength: 100.0
+  torque {
+  }
+}
+actuators {
+  name: "iiwa_joint_5"
+  joint: "iiwa_joint_5"
+  strength: 100.0
+  torque {
+  }
+}
+actuators {
+  name: "iiwa_joint_6"
+  joint: "iiwa_joint_6"
+  strength: 100.0
+  torque {
+  }
+}
+actuators {
+  name: "iiwa_joint_7"
+  joint: "iiwa_joint_7"
+  strength: 100.0
+  torque {
+  }
+}
+gravity {
+  z: -9.81
+}
+friction: 0.6
+angular_damping: -0.05
+baumgarte_erp: 0.1
+dt: 0.01
+substeps: 10
+dynamics_mode: "legacy_spring"

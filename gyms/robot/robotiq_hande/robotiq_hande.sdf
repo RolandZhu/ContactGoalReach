@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.6">
+  <model name="robotiq_hande">
+    <!-- Base of the gripper -->
+    <link name="gripper_body">
+      <inertial>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.1</iyy>
+          <iyz>0</iyz>
+          <izz>0.1</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual1">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_body_c01.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="visual2">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_body_c02.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision1">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_body_c01.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision2">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_body_c02.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Fingers and their prismatic joints -->
+    <link name="gripper_finger1">
+      <inertial>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.1</iyy>
+          <iyz>0</iyz>
+          <izz>0.1</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual1">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c01.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="visual2">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c02.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="visual3">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c03.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="visual4">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c04.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision1">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c01.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision2">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c02.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision3">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c03.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision4">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c04.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="gripper_finger2">
+      <inertial>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.1</iyy>
+          <iyz>0</iyz>
+          <izz>0.1</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual1">
+        <pose>0 0 0 0 0 3.14157</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c01.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="visual2">
+        <pose>0 0 0 0 0 3.14157</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c02.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="visual3">
+        <pose>0 0 0 0 0 3.14157</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c03.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="visual4">
+        <pose>0 0 0 0 0 3.14157</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c04.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision1">
+        <pose>0 0 0 0 0 3.14157</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c01.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision2">
+        <pose>0 0 0 0 0 3.14157</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c02.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision3">
+        <pose>0 0 0 0 0 3.14157</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c03.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision4">
+        <pose>0 0 0 0 0 3.14157</pose>
+        <geometry>
+          <mesh>
+            <uri>robotiq_hande/robotiq_hande_finger_c04.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!--
+    Defines an invisible volume for the purpose of the SimpleGripperPlugin:
+    When an object collides with that volume, it is considered "grasped".
+
+    Please note:
+    * Inertial values should be inconsequential
+    * The pose of the volume may be eyeballed in MeshLab
+    -->
+    <link name="sticky_link">
+      <pose>0.0 0.0 0.128 0 0 0</pose>
+      <inertial>
+        <mass>0.001</mass>
+        <pose>0 0 0 0 0 0</pose>
+        <inertia>
+          <ixx>0.00000160833269</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00000160833269</iyy>
+          <iyz>0</iyz>
+          <izz>0.0000032</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_grip">
+        <pose>0 0 0.0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.02</radius>
+            <length>0.04</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <collide_without_contact>true</collide_without_contact>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+    <joint name="sticky_link_joint" type="fixed">
+      <parent>gripper_body</parent>
+      <child>sticky_link</child>
+    </joint>
+
+    <joint name="finger1" type="prismatic">
+      <parent>gripper_body</parent>
+      <child>gripper_finger1</child>
+      <pose>0 0 0 0 0 0</pose>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0.025</upper>
+        </limit>
+       </axis>
+    </joint>
+    <joint name="finger2" type="prismatic">
+      <parent>gripper_body</parent>
+      <child>gripper_finger2</child>
+      <pose>0 0 0 0 0 0</pose>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0.025</upper>
+        </limit>
+       </axis>
+    </joint>
+
+  </model>
+</sdf>
